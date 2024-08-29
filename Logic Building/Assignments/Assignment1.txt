@@ -1,1 +1,189 @@
+1. Flowchart to check whether the no is positive or not
+                Start
+                  |
+               Input Num
+                  |       Yes
+               Is Num > 0 --->  Print "Positive" -->  |
+                  | No    Yes                         |
+               Is Num < 0 --->  Print "Negative" -->  |
+                  | No                                |
+               Print 0                                |
+                  |   <-------------------------------|
+               Stop
+Code : 
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   int num = 2;
+if (num > 0) {
+    System.out.println("Num is Positive");
+ 
+    } else if (num < 0) {
+ 
+      System.out.println("Num is Negative");
+ 
+    } else {
+ 
+      System.out.println("Num is 0");
+ 
+    }
+ 
+  }
+ 
+}
 
+2. Flowchart to check whether the no is negative.
+                Start
+                  |
+               Input Num
+                  |       Yes
+               Is Num < 0 --->  Print "Negative" -->  |
+                  | No    Yes                         |
+               Is Num > 0 --->  Print "Positive" -->  |
+                  | No                                |
+               Print 0                                |
+                  |   <-------------------------------|
+                 Stop
+Code:
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   int num = -5;
+if (num < 0) {
+    System.out.println("Num is Negative");
+ 
+    } else if (num > 0) {
+ 
+      System.out.println("Num is Positive");
+ 
+    } else {
+ 
+      System.out.println("Num is 0");
+ 
+    }
+ 
+  }
+}
+
+3. Flowchart to check whether the no is even or odd.
+                Start
+                  |
+               Input Num
+                  |       
+               Is Num % 2==0
+              / Yes         \ No
+             Print "Even"     Print "Odd"
+                  |_______________|             
+                          |
+                         Stop
+Code:
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   int num = 4;
+    if (num % 2 == 0) {
+            System.out.println("Num is even");
+        } else {
+            System.out.println("Num is odd");
+        }
+    }
+}
+
+4. Flowchart to display Good Morning message based on time.
+                Start
+                  |
+               Input Time
+                  |       
+               Is Time >= 5 && Time < 12
+              / Yes         \ No
+            Print            Print
+      "Good Morning"         "No Good Morning"
+                  |_______________|             
+                          |
+                         Stop
+Code:
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   int time= 10;
+   if (time >= 5 && time < 12) {
+            System.out.println("Good Morning");
+        } else {
+            System.out.println("No Good Morning");
+        }
+    }
+}
+
+5. Flowchart to calculate and print the area of square.
+                Start
+                  |
+               Input Side
+                  | 
+               Area= Side*Side
+                  |
+               Print Area
+                  |
+                 Stop
+Code:
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   double side = 7.9;
+   double area = side * side;
+        System.out.println("The area of the square is " + area);
+    }
+}
+
+6. Flowchart to calculate and print the arae of rectangle.
+                Start
+                  |
+               Input Length, Breadth
+                  | 
+               Area= Length* Breadth
+                  |
+               Print Area
+                  |
+                 Stop
+Code: 
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+   double length= 12.5;
+   double breadth= 17.5;
+   double area= length * breadth;
+   System.out.println("The area of the rectangle is " + area);
+    }
+}
+
+7. Flowchart to find the largest of three numbers.
+                 Start
+                  |
+               Input a, b, c
+                  | 
+                If a > b
+            No /        \ Yes
+       if b > c---> <--- if a > c
+         |       No   No     |
+     Yes |         \___/     | Yes
+         |           |       |
+    Print b      Print c     Print a
+          \__________|_________/         
+                    Stop
+Code:
+import java.util.*;
+ public class Main {
+ public static void main(String[] args) {
+int a= 10;
+int b= 50;
+int c= 30;
+int largest;
+if (a > b && a > c) {
+            largest = a;
+        } else if (b > a && b > c) {
+            largest = b;
+        } else {
+            largest = c;
+        }
+        System.out.println("The largest number among three nos  is " + largest);
+    }
+}
